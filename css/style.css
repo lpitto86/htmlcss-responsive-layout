@@ -11,4 +11,46 @@ html {
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #0084fd;
+}
+
+h1 {
+    color: #0084fd;
+}
+
+div {
+    border: 2px solid #0084fd;
+}
+
+#main-nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#main-nav-container nav {
+    display: none;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+
+}
+
+/*DESKTOP */
+
+@media screen and (min-width: 992px) {
+
+    #main-nav-container nav {
+        display: block;
+    }
+
+    #main-nav-container .hamburger-container {
+        display: none;
+    }
 }
