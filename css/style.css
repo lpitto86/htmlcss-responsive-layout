@@ -23,6 +23,7 @@ html {
 
 .my-col {
     width: calc(100% - 20px);
+    margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
     background-color: #a3cef7;
@@ -30,6 +31,10 @@ html {
 
 .bg-main {
     background-color: #0084fd;
+}
+
+.bg-secondary {
+    background-color: #3e82c2;
 }
 
 header {
@@ -60,16 +65,20 @@ main > section {
     padding: 40px 0;
 }
 
+.planning-container {
+    padding: 0 50px;
+}
+
 /* TABLET */
 
 @media screen and (min-width: 768px) {
 
-    .my-col {
+    .my-col-tablet-33 {
         width: calc((100% / 3) - 20px);
     }
 
-    .my-col-big {
-        width: calc(((100% / 3) * 2)- 20px);
+    .my-col-tablet-66 {
+        width: calc(((100% / 3) * 2) - 20px);
     }
 }
 
@@ -83,5 +92,17 @@ main > section {
 
     #main-nav-container .hamburger-container {
         display: none;
+    }
+
+    .first-card-container {
+        display: flex;
+    }
+
+    .first-card-container > :first-child {
+        width: 60%;
+    }
+
+    .first-card-container > :last-child {
+        width: 40%;
     }
 }
