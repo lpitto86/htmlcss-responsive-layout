@@ -37,6 +37,10 @@ html {
     background-color: #3e82c2;
 }
 
+.color-white {
+    color: white;
+}
+
 header {
     background-color: #0084fd;
 }
@@ -45,6 +49,10 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+}
+
+#main-nav-container img {
+    height: 24px;
 }
 
 #main-nav-container nav {
@@ -63,6 +71,10 @@ header {
 
 main > section {
     padding: 40px 0;
+}
+
+.testimonials-header-container {
+    text-align: center;
 }
 
 /* TABLET */
