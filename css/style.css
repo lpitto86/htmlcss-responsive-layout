@@ -148,6 +148,7 @@ main > section {
     }
 
     .my-col-tablet-66 {
+        padding-bottom: 0;
         width: calc(((100% / 3) * 2) - 20px);
     }
 
