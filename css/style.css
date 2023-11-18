@@ -12,6 +12,7 @@ html {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
+    line-height: 1.5;
 }
 
 .my-row {
@@ -172,6 +173,7 @@ main > section {
     background-color: #9d8cfd;
     margin-bottom: 20px;
     text-align: center;
+    width: 100%;
 }
 
 .get-start-container button {
