@@ -37,6 +37,11 @@ html {
 
 .fa-solid {
     color: #2795fc;
+    text-align: center;
+}
+
+.hamburger-container {
+    color: white;
 }
 
 .bg-main {
@@ -139,13 +144,32 @@ main > section {
     border-radius: 50%;
 }
 
+.about-us-container button {
+    background-color: #9d8cfd;
+    color: white;
+}
+
+.get-start-container {
+    background-color: #9d8cfd;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.get-start-container button {
+    background-color: white;
+    color: #9d8cfd;
+}
+
+.get-start-container :last-child {
+    display: flex;
+}
+
 /* TABLET */
 
 @media screen and (min-width: 768px) {
 
     .my-col-tablet-33 {
         width: calc((100% / 3) - 20px);
-        text-align: center;
     }
 
     .my-col-tablet-50 {
