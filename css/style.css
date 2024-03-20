@@ -5,14 +5,54 @@
 }
 
 html {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --header-main-color: #0084FD;
+    --my-col-main-section-1-color: #B5DDFF;
+    --main-footer-top-main-color: #9792E4;
+    --icons-first-section: 88px;
+    --second-section-bg-color: #9792E4;
+    --footer-bg-color: #333333;
+}
+
+.bg-main {
+    background-color: var(--header-main-color);
+}
+
+.color-main {
+    color: var(--header-main-color);
+}
+
+.bg-main-light {
+    background-color: var(--my-col-main-section-1-color);
+}
+
+.second-section-color {
+    background-color: var(--second-section-bg-color);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.font-violet {
+    color: var(--second-section-bg-color);
+}
+
+.icons-first-section {
+    font-size: var(--icons-first-section);
+}
+
+.bg-footer {
+    background-color: var(--footer-bg-color);
 }
 
 .container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
-    line-height: 1.5;
 }
 
 .my-row {
@@ -22,261 +62,542 @@ html {
     margin-right: -10px;
 }
 
-.my-row h3 {
-    color:#178dfc;
-}
-
-.my-col {
+.my-col-100 {
     width: calc(100% - 20px);
-    margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 5%;
-    background-color: #a5e2fa;
-    border-radius: 15px;
 }
 
-.fa-solid {
-    color: #2795fc;
-    text-align: center;
-    line-height: 1.5;
-}
-
-.my-col-tablet-66 {
-    color: #424c55;
-    line-height: 1.5;
-}
-
-.hamburger-container {
-    color: white;
-}
-
-.fa-solid {
-    scale: 2;
-}
-
-.first-card-container button {
-    width: 70%;
-    height: 40px;
-    border-radius: 20px;
-    color: white;
-    background-color: #2795fc;
-    border: none;
-}
-
-.bg-main {
-    background-color: #2795fc;
-}
-
-.bg-secondary {
-    padding: 20px 10px;
-    background-color: #9d8cfd;
-    border-radius: 20px;
-}
-
-.bg-secondary h2 {
-    text-align: center;
-}
-
-.bg-white {
-    background-color: white;
-}
-
-.color-white {
-    color: white;
-}
-
+/* 
+    HEADER
+*/
 header {
-    background-color: #2795fc;
+    color: white;
 }
 
-#main-nav-container {
+.main-nav-container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    color: white;
+    align-items: center;
+    padding: 20px 0;
 }
 
-#main-nav-container img {
-    height: 24px;
-}
-
-#main-nav-container nav {
+.main-nav-container nav {
     display: none;
 }
 
-#main-nav-container nav li {
-    display: inline-block;
+.main-nav-container nav ul {
+    list-style: none;
 }
 
-#main-nav-container nav li a {
+.main-nav-container nav ul li {
     display: inline-block;
-    color: white;
+    padding-left: 12px;
+}
+
+.main-nav-container nav ul li a {
+    display: inline-block;
     text-decoration: none;
-}
-
-main > section {
-    padding: 40px 10%;
-}
-
-.phone-img-container {
-    width: 200px;
-    height: 200px;
-    align-items: flex-end;
-}
-
-.phone-img-container img {
-    width: 100%;
-    height: 100%;
-}
-
-.planning-img-container {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 20px auto;
-}
-
-.planning-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.testimonials-container > * {
-    margin-bottom: 20px;
-}
-
-.testimonials-header-container,
-.testimonials-container > * {
-    text-align: center;
-}
-
-.testimonial-img-container {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 20px auto;
-}
-
-.testimonial-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.about-us-container button {
-    background-color: #9d8cfd;
     color: white;
 }
 
-.get-start-container {
-    background-color: #9d8cfd;
-    margin-bottom: 20px;
-    text-align: center;
-    width: 100%;
-}
-
-.get-start-container button {
+.main-nav-container nav ul li:last-child a {
+    color: black;
+    padding: 6px;
     background-color: white;
-    color: #9d8cfd;
+    border-radius: 16px;
 }
 
-.get-start-container :last-child {
+.hamburger-container i {
+    font-size: 2.8em;
+}
+
+/* 
+    MAIN
+*/
+main > section {
+    padding: 40px 0;
+}
+
+/* 
+    FIRST SECTION
+*/
+#first-section .my-col-100 {
+    margin-bottom: 10px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 16px;
 }
 
-.footer-container {
-    background-color: #2f2d3f;
-    color: white;
+#first-section .my-col-100:not(:first-child) > div {
+    width: 100%;
+}
+
+#first-section .first-container, #first-section .second-container {
+    padding: 0 20px;
+    width: 100%;
+}
+
+#first-section div {
     text-align: center;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px 20px;
-    line-height: 1.5;
 }
 
-/* TABLET */
+.first-container h2 {
+    color: var(--header-main-color);
+    margin: 32px 0;
+}
 
-@media screen and (min-width: 768px) {
+.first-container p {
+    line-height: 28px;
+    margin-bottom: 32px;
+}
 
-    .my-col-tablet-33 {
+.first-container i {
+    margin-bottom: 32px;
+}
+
+.first-container a {
+    text-decoration: none;
+    background-color: var(--header-main-color);
+    color: white;
+    padding: 12px 40px;
+    border-radius: 16px;
+}
+
+.second-container img {
+    max-width: 85%;
+}
+
+#first-section .my-col-100:not(:first-child) p {
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+
+#first-section .my-col-100:not(:first-child) i {
+    margin: 24px 0;
+}
+
+#first-section .my-col-100:not(:first-child) h2 {
+    margin-bottom: 24px;
+}
+
+/* 
+    SECOND SECTION
+*/
+#second-section .my-col-100:first-child {
+    margin-bottom: 32px;
+}
+
+#second-section img {
+    width: 100%;
+}
+
+#second-section .my-col-100:last-child {
+    padding: 10px;
+    border-radius: 16px;
+}
+
+#second-section h2, #second-section h3 {
+    margin: 24px 0;
+}
+
+#second-section .my-col-100:last-child h3, #second-section .my-col-100:last-child p {
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
+#second-section .my-col-100:last-child div {
+    text-align: center;
+}
+
+#second-section .my-col-100 a {
+    color: black;
+    padding: 12px;
+    background-color: var(--second-section-bg-color);
+    border-radius: 50%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+/* 
+    THIRD SECTION
+*/
+#third-section .my-col-100 {
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+#third-section .thirty-percent {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#third-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#third-section .my-col-100:nth-child(4), #third-section .my-col-100:nth-child(5), #third-section .my-col-100:nth-child(6) {
+    padding: 16px;
+    border-radius: 16px;
+}
+
+#third-section .my-col-100:nth-child(4) p, #third-section .my-col-100:nth-child(5) p, #third-section .my-col-100:nth-child(6) p {
+    padding: 12px;
+    color: white;
+}
+
+/* 
+    FOURTH SECTION
+*/
+#fourth-section .my-col-100:first-child h2 {
+    color: white;
+    margin-bottom: 24px;
+}
+
+#fourth-section .my-col-100:not(:first-child) {
+    background-color: white;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+#fourth-section .my-col-100:not(:first-child) p:first-of-type {
+    font-size: 3em;
+    color: var(--second-section-bg-color);
+}
+
+#fourth-section .my-col-100:not(:first-child) h2 {
+    color: var(--second-section-bg-color);
+}
+
+#fourth-section .my-col-100:not(:first-child) * {
+    padding: 16px;
+}
+
+#fourth-section .my-col-100:not(:first-child) div {
+    padding-top: 32px;
+    padding-bottom: 48px;
+}
+
+#fourth-section .my-col-100:not(:first-child) div a {
+    text-decoration: none;
+    padding: 16px 36px;
+    color: white;
+    background-color: var(--second-section-bg-color);
+    border-radius: 50px;
+}
+
+/* 
+    FIFTH SECTION
+*/
+#fifth-section .my-col-100 * {
+    padding: 16px;
+}
+
+#fifth-section h2 {
+    font-size: 2em;
+}
+
+#fifth-section p {
+    line-height: 32px;
+}
+
+#fifth-section .about-container {
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#fifth-section .about-container img {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#fifth-section .my-col-100:last-child p {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#fifth-section a {
+    text-decoration: none;
+    background-color: var(--second-section-bg-color);
+    color: white;
+    border-radius: 50px;
+}
+
+#fifth-section .my-col-100:last-child a div {
+    color: var(--second-section-bg-color);
+    display: inline-block;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+}
+
+/* 
+    SIXTH SECTION
+*/
+
+#sixth-section {
+    text-align: center;
+    color: white;
+}
+
+#sixth-section .my-col-100 * {
+    padding: 16px;
+}
+
+#sixth-section h3 {
+    font-size: 2em;
+}
+
+#sixth-section h2 {
+    color: #FDC15F;
+    font-size: 4em;
+}
+
+#sixth-section .my-col-100:nth-child(5) a {
+    text-decoration: none;
+    background-color: white;
+    color: var(--second-section-bg-color);
+    border-radius: 50px;
+    padding: 16px 24px;
+}
+
+#sixth-section .my-col-100:nth-child(5) div {
+    padding: 32px;
+}
+
+#sixth-section .my-col-100:last-child a {
+    padding: 0;
+    color: white;
+}
+
+#sixth-section .my-col-100:last-child i {
+    padding: 8px;
+    font-size: 6px;
+    vertical-align: middle;
+}
+
+/* 
+    FOOTER
+*/
+footer {
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+footer .my-col-100:first-child {
+    margin-bottom: 40px;
+}
+
+footer a {
+    color: var(--second-section-bg-color);
+}
+
+
+/* 
+    TABLET
+*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .my-col-100 {
         width: calc((100% / 3) - 20px);
     }
 
-    .my-col-tablet-50 {
-        width: calc(50% - 20px);
-    }
-
-    .my-col-tablet-66 {
-        padding-bottom: 0;
+    .my-col-big {
         width: calc(((100% / 3) * 2) - 20px);
     }
 
-    .testimonials-container > * {
-        display: flex;
-        align-items: center;
+    #first-section .my-col-100 {
+        align-items: flex-end;
     }
 
-    .testimonial-img-container {
-        flex-shrink: 0;
-        margin-bottom: 0;
-    }
-
-    .testimonial-text-container {
-        flex-grow: 1;
+    #first-section div {
         text-align: left;
-        padding: 20px;
     }
 
-    .about-us-container {
+    #first-section .my-col-100:not(:first-child) div {
+        text-align: center;
+    }
+
+    #first-section .second-container {
+        width: 50%;
+    }
+
+    #second-section .my-col-100 {
+        width: calc(100% - 20px);
+    }
+
+    #third-section .my-col-100 {
+        width: calc(100% - 20px);
+    }
+
+    #third-section .with-img {
         display: flex;
     }
 
-    .about-us-container > :first-child {
+    #third-section .thirty-percent {
+        width: 200px;
+        height: 200px;
+    }
+
+    #third-section .seventy-percent {
         width: 70%;
     }
 
-    .about-us-container > :last-child {
-        width: 30%;
+    #fourth-section .my-row .with-title {
+        width: 100%;
+    }
+
+    #fourth-section .my-col-100 {
+        width: calc(50% - 20px);
+    }
+
+    #fifth-section .my-col-100:first-child {
+        width: calc(65% - 20px);
+    }
+
+    #fifth-section .my-col-100:last-child {
+        width: calc(35% - 20px);
+    }
+
+    #sixth-section .my-row {
+        justify-content: center;
+    }
+
+    #sixth-section .my-col-100 {
+        width: calc(70% - 20px);
+    }
+
+    #sixth-section * {
+        text-align: center;
+    }
+
+    footer .my-row {
+        justify-content: center;
+    }
+
+    footer .my-col-100 {
+        width: calc(70% - 20px);
+    }
+
+    footer * {
+        text-align: center;
     }
 }
 
-/*DESKTOP */
-
+/* 
+    DESKTOP
+*/
 @media screen and (min-width: 992px) {
-
-    .my-col-desktop-33 {
-        width: calc((100% / 3) - 20px);
-    }
-    
-    #main-nav-container nav {
+    .main-nav-container nav {
         display: block;
     }
 
-    #main-nav-container .hamburger-container {
+    .main-nav-container .hamburger-container {
         display: none;
     }
 
-    .first-card-container {
-        display: flex;
+    .my-col-100 {
+        width: calc((100% / 3) - 20px);
     }
 
-    .first-card-container > :first-child {
-        width: 60%;
+    .my-col-big {
+        width: calc(((100% / 3) * 2) - 20px);
     }
 
-    .first-card-container > :last-child {
-        width: 40%;
-    }
-
-    .planning-container {
-        padding: 0 80px;
-        display: flex;
+    #first-section .my-col-100 {
         align-items: flex-end;
-        justify-content: space-between;
     }
-    
-    .planning-container > * {
-        width: 48%;
+
+    #first-section .first-container, #first-section .second-container {
+        width: 50%;
+    }
+
+    #second-section .my-row {
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    #second-section .my-col-100 {
+        width: calc(30% - 20px);
+    }
+
+    #second-section .my-col-100:first-child {
+        margin-right: 32px;
+    }
+
+    #second-section .my-col-100:first-child h2 {
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    #third-section .my-col-100 {
+        width: calc(100% - 20px);
+    }
+
+    #third-section .with-img {
+        display: flex;
+    }
+
+    #third-section .thirty-percent {
+        width: 200px;
+        height: 200px;
+    }
+
+    #third-section .seventy-percent {
+        width: 70%;
+    }
+
+    #fourth-section .my-row .with-title {
+        width: 100%;
+    }
+
+    #fourth-section .my-col-100 {
+        width: calc((100% / 3) - 20px);
+    }
+
+    #fifth-section .my-col-100:first-child {
+        width: calc(65% - 20px);
+    }
+
+    #fifth-section .my-col-100:last-child {
+        width: calc(35% - 20px);
+    }
+
+    #sixth-section .my-row {
+        justify-content: center;
+    }
+
+    #sixth-section .my-col-100 {
+        width: calc(55% - 20px);
+    }
+
+    #sixth-section * {
+        text-align: center;
+    }
+
+    footer .my-row {
+        justify-content: center;
+    }
+
+    footer .my-col-100 {
+        width: calc(55% - 20px);
+    }
+
+    footer * {
+        text-align: center;
     }
 }

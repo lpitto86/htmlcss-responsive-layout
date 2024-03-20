@@ -1,342 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Layout</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Layout</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="bg-main">
-        <div class="container">
-            <div id="main-nav-container">
-                <div>
-                    <img src="img/logo.png">
-                </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Planning
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Testimonials
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Features
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <button>
-                                Get Started
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="hamburger-container">
-                    <i class="fa-solid fa-bars"></i>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header class="bg-main">
+            <div class="container">
+                <div class="main-nav-container">
+                    <div>
+                        <img src="./img/logo.png" alt="logo">
+                    </div>
+
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">Planning</a>
+                            </li>
+
+                            <li>
+                                <a href="">Testimonials</a>
+                            </li>
+
+                            <li>
+                                <a href="">Features</a>
+                            </li>
+
+                            <li>
+                                <a href="">About Us</a>
+                            </li>
+
+                            <li>
+                                <a href="">Get Started</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="hamburger-container">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <section>
-            <div class="container">
-                <div class="my-row">
-                    <div class="my-col my-col-tablet-66">
-                        <div class="first-card-container">
-                            <div>
-                                <h3>
+        <main>
+            <section id="first-section">
+                <div class="container">
+                    <div class="my-row">
+                        <div class="bg-main-light my-col-100 my-col-big">
+                            <div class="first-container">
+                                <h2>
                                     Get a demo application
-                                </h3>
+                                </h2>
+
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditis.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis amet repudiandae alias vero velit nisi accusantium eius adipisci aperiam perspiciatis.
                                 </p>
-                                <div>
-                                    <a href="#">
-                                        App Store
-                                    </a>
-                                </div>
+
+                                <a href="">
+                                    <i class="fa-brands fa-apple"></i> <span>App Store</span>
+                                </a>
                             </div>
-                            <div class="phone-img-container">
-                                <img src="img/phone.png" alt="Image">
+
+                            <div class="second-container">
+                                <img src="./img/phone.png" alt="phone">
+                            </div>
+                        </div>
+
+                        <div class="bg-main-light my-col-100">
+                            <div>
+                                <i class="icons-first-section color-main fa-solid fa-sheet-plastic"></i>
+                            </div>
+
+                            <div>
+                                <h2 class="color-main">
+                                    Clean Code
+                                </h2>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officiis dolorum sed velit delectus consequatur veniam dolore dolor. Autem.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-main-light my-col-100">
+                            <div>
+                                <i class="icons-first-section color-main fa-solid fa-sheet-plastic"></i>
+                            </div>
+
+                            <div>
+                                <h2 class="color-main">
+                                    Web Design
+                                </h2>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officiis dolorum sed velit delectus consequatur veniam dolore dolor. Autem.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-main-light my-col-100">
+                            <div>
+                                <i class="icons-first-section color-main fa-solid fa-sheet-plastic"></i>
+                            </div>
+
+                            <div>
+                                <h2 class="color-main">
+                                    Development
+                                </h2>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officiis dolorum sed velit delectus consequatur veniam dolore dolor. Autem.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-main-light my-col-100">
+                            <div>
+                                <i class="icons-first-section color-main fa-solid fa-sheet-plastic"></i>
+                            </div>
+
+                            <div>
+                                <h2 class="color-main">
+                                    Branding
+                                </h2>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officiis dolorum sed velit delectus consequatur veniam dolore dolor. Autem.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="my-col my-col-tablet-33">
-                        <i class="fa-solid fa-file-code"></i>
-                        <h3>
-                            Clean Code
-                        </h3><p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditis.
-                        </p>
-                    </div>
-                    <div class="my-col my-col-tablet-33">
-                        <i class="fa-sharp fa-solid fa-compass-drafting"></i>
-                        <h3>
-                            Web Design
-                        </h3><p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditis.
-                        </p>
-                    </div>
-                    <div class="my-col my-col-tablet-33">
-                        <i class="fa-solid fa-laptop-code"></i>
-                        <h3>
-                            Development
-                        </h3><p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditis.
-                        </p>
-                    </div>
-                    <div class="my-col my-col-tablet-33">
-                        <i class="fa-solid fa-bullhorn"></i>
-                        <h3>
-                            Branding
-                        </h3><p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditis.
-                        </p>
-                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="bg-secondary color-white">
-            <div class="container">
-                <div class="planning-container">
-                    <div>
-                        <div class="planning-img-container">
-                            <img src="img/planning1.png" alt="Image">
-                        </div>
-                        <h3>
-                            Strategic Planning
-                        </h3>
-                        <p>
-                            Egestas di id ornare arcu odio. In tellus integer feugiat scelerisque varius morbi enim nunc. Habitasse platea dictumst quisque sagittis. Interdum velit euismod in pellentesque massa placerat duis. Quis viverra nibh cras pulvinar mattis.
-                        </p>
-                    </div>
-                    <div>
-                        <div class="planning-img-container">
-                            <img src="img/planning2.png" alt="Image">
-                        </div>
-                        <h3>
-                            App Development
-                        </h3>
-                        <p>
-                            Develop an on-demand app for your delivery business to reach your targeted customers without any interruption.
-                        </p>
-                        <i class="fa-solid fa-arrow-down"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <section id="second-section" class="second-section-color">
+                <div class="container">
+                    <div class="my-row">
+                        <div class="my-col-100">
+                            <img src="./img/planning1.png" alt="planning1">
 
-        <section>
-            <div class="container">
-                <div class="testimonials-header-container">
-                    <p>
-                        TESTIMONIALS
-                    </p>
-                    <h2>
-                        We are committed expert partners
-                    </h2>
-                    <p>
-                        We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right.
-                    </p>
-                </div>
-                <div class="testimonials-container">
-                    <div class="bg-secondary color-white">
-                        <div class="testimonial-img-container">
-                            <img src="img/testimonial1.jpg" alt="Nat Reynolds">
-                        </div>
-                        <div class="testimonial-text-container">
-                            <p>
-                                Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin.
-                            </p>
-                            <span>
-                                NAT REYNOLDS
-                            </span>
-                        </div>
-                    </div>
-                    <div class="bg-secondary color-white">
-                        <div class="testimonial-img-container">
-                            <img src="img/testimonial2.jpg" alt="Celia Almeda">
-                        </div>
-                        <div class="testimonial-text-container">
-                            <p>
-                                Pharetra vel turpis nunc eget lorem. Quisque id diam vel quam elementum pulvinar etiam. Urna porttitor rhoncus dolor purus non enim praesent elementum.
-                            </p>
-                            <span>
-                                CELIA ALMEDA
-                            </span>
-                        </div>
-                    </div>
-                    <div class="bg-secondary color-white">
-                        <div class="testimonial-img-container">
-                            <img src="img/testimonial3.jpg" alt="Bob Roberts">
-                        </div>
-                        <div class="testimonial-text-container">
-                            <p>
-                                Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin. Nibh nisl condimentum id venenatis a condimentum.
-                            </p>
-                            <span>
-                                BOB ROBERTS
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                            <h2>
+                                Strategic Planning
+                            </h2>
 
-        <section class="bg-secondary">
-            <div class="container">
-                <h2 class="color-white">
-                    Benefits of working with us
-                </h2>
-                <div class="my-row">
-                    <div class="my-col my-col-tablet-50 my-col-desktop-33">
-                        <div class="bg-white">
-                            <h1>
+                            <p>
+                                Egestas di id ornare arcu odio. In tellus integer feugiat scelerisque varius morbi enim nunc. Habitasse platea dictumst quisque sagittis. Interdum velit euismod in pellentesque massa placerat duis. Quis viverra nibh cras pulvinar mattis.
+                            </p>
+                        </div>
+
+                        <div class="my-col-100 bg-white">
+                            <div>
+                                <img src="./img/planning2.png" alt="planning2">
+
+                                <h3>
+                                    App Development
+                                </h3>
+
+                                <p>
+                                    Develop an on-demand app for your delivery business to reach your targeted customers without any interruption.
+                        </p>
+                                </p>
+
+                                <a href=""><i class="fa-solid fa-arrow-down"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="third-section">
+                <div class="container">
+                    <div class="my-row">
+                        <div class="my-col-100">
+                            <span>TESTIMONIALS</span>
+                        </div>
+
+                        <div class="my-col-100">
+                            <h2 class="font-violet">
+                                We are committed expert partners
+                            </h2>
+                        </div>
+
+                        <div class="my-col-100">
+                            <p>
+                                We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right.
+                            </p>
+                        </div>
+
+                        <div class="my-col-100 with-img second-section-color">
+                            <div class="thirty-percent">
+                                <img src="./img/testimonial1.jpg" alt="testimonial1">
+                            </div>
+
+                            <div class="seventy-percent">
+                                <p>
+                                    Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin.
+                                </p>
+
+                                <p>
+                                    NAT REYNOLDS
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="my-col-100 with-img second-section-color">
+                            <div class="thirty-percent">
+                                <img src="./img/testimonial2.jpg" alt="testimonial2">
+                            </div>
+
+                            <div class="seventy-percent">
+                                <p>
+                                    Pharetra vel turpis nunc eget lorem. Quisque id diam vel quam elementum pulvinar etiam. Urna porttitor rhoncus dolor purus non enim praesent elementum.
+                                </p>
+
+                                <p>
+                                    CELIA AMEDA
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="my-col-100 with-img second-section-color">
+                            <div class="thirty-percent">
+                                <img src="./img/testimonial3.jpg" alt="testimonial3">
+                            </div>
+
+                            <div class="seventy-percent">
+                                <p>
+                                    Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin. Nibh nisl condimentum id venenatis a condimentum.
+                                </p>
+
+                                <p>
+                                    BOB ROBERTS
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="fourth-section" class="second-section-color">
+                <div class="container">
+                    <div class="my-row">
+                        <div class="my-col-100 with-title">
+                            <h2>
+                                Benefits of working with us
+                            </h2>
+                        </div>
+
+                        <div class="my-col-100">
+                            <p>
                                 01
-                            </h1>
-                            <h3>
-                                High Quality
-                            </h3>
-                            <p>
-                                Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.
                             </p>
-                        </div>
-                    </div>
-                    <div class="my-col my-col-tablet-50 my-col-desktop-33">
-                        <div class="bg-white">
-                            <h1>
-                                02
-                            </h1>
-                            <h3>
-                                Creative Team
-                            </h3>
-                            <p>
-                                Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="my-col my-col-tablet-50 my-col-desktop-33">
-                        <div class="bg-white">
-                            <h1>
-                                03
-                            </h1>
-                            <h3>
-                                Amazing Results
-                            </h3>
-                            <p>
-                                Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="my-col my-col-tablet-50 my-col-desktop-33">
-                        <div class="bg-white">
-                            <h1>
-                                04
-                            </h1>
-                            <h3>
-                                Best Pricing
-                            </h3>
-                            <p>
-                                Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="my-col my-col-tablet-50 my-col-desktop-33">
-                        <div class="bg-white">
-                            <h1>
-                                05
-                            </h1>
-                            <h3>
-                                Innovations
-                            </h3>
-                            <p>
-                                Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="my-col my-col-tablet-50 my-col-desktop-33">
-                        <div class="bg-white">
-                            <h1>
-                                06
-                            </h1>
-                            <h3>
-                                24/7 Support
-                            </h3>
-                            <p>
-                                Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="about-us-container">
-                    <div>
-                        <h2>
-                            About Us
-                        </h2>
-                        <p>
-                            Sample text. Click to Egestas egestas fringilla phasellus faucibus sclerisque eleifend donec pretium vulputate. Pharetra magna ac placerat vestibulum. Quam lacus suspendisse faucibus interdum posuere lorem. Egestas tellus rutrum tellus pallentesque eu tincidunt. Neque vitae tempus quam pellentesque nec. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Interdum velit euismod in pellentesque massa placerat duis.
-                        </p>
-                        <p>
-                            Quis viverra nibh cras pulvinar mattis. Ornare arcu dui vivamus felis bibendum ut tristique. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Dignissim diam quis enim lobortis scelerisque. Tellus molestie nunc non blandit massa enim. the text box. Click again or double click to start editing the text.
-                        </p>
-                    </div>
-                    <div>
-                        <div class="testimonial-img-container">
-                            <img src="img/about.jpg" alt="Image">
-                        </div>
-                        <p>
-                            I help companies tincidunt tortor aliqua nulla facilis cras fermentum odio.
-                        </p>
-                        <div>
-                            <a href="#">
-                                Find me on linkedin
-                            </a>
-                        </div>
-                    <div>
-                        <button>
-                            Get Started
-                        </button>
-                    </div>
-                    <div>
-                        <div>
-                            Copyright 2021 Boolean
-                        </div>
-                        <div>
-                            Classe XX
-                        </div>
-                        <a href="#">
-                            Privacy policy
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
 
-    <footer>
-        <div class="container">
-            FOOTER
-        </div>
-    </footer>
-    
-</body>
+                            <h2>
+                                High Quality
+                            </h2>
+
+                            <p>
+                                Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.
+                            </p>
+
+                            <div>
+                                <a href="">m o r e</a>
+                            </div>
+                        </div>
+
+                        <div class="my-col-100">
+                            <p>
+                                02
+                            </p>
+
+                            <h2>
+                                Creative Team
+                            </h2>
+
+                            <p>
+                                Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.
+
+                            <div>
+                                <a href="">m o r e</a>
+                            </div>
+                        </div>
+
+                        <div class="my-col-100">
+                            <p>
+                                03
+                            </p>
+
+                            <h2>
+                                Amazing Results
+                            </h2>
+
+                            <p>
+                                Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.
+                            </p>
+
+                            <div>
+                                <a href="">m o r e</a>
+                            </div>
+                        </div>
+
+                        <div class="my-col-100">
+                            <p>
+                                04
+                            </p>
+
+                            <h2>
+                                Best Pricing
+                            </h2>
+
+                            <p>
+                                Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.
+                            </p>
+
+                            <div>
+                                <a href="">m o r e</a>
+                            </div>
+                        </div>
+
+                        <div class="my-col-100">
+                            <p>
+                                05
+                            </p>
+
+                            <h2>
+                                Innovations
+                            </h2>
+
+                            <p>
+                                Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.
+                            </p>
+
+                            <div>
+                                <a href="">m o r e</a>
+                            </div>
+                        </div>
+
+                        <div class="my-col-100">
+                            <p>
+                                06
+                            </p>
+
+                            <h2>
+                                24/7 Support
+                            </h2>
+
+                            <p>
+                                Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.
+                            </p>
+
+                            <div>
+                                <a href="">m o r e</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="fifth-section">
+                <div class="container">
+                    <div class="my-row">
+                        <div class="my-col-100">
+                            <h2 class="font-violet">
+                                About Us
+                            </h2>
+
+                            <p>
+                                Sample text. Click to Egestas egestas fringilla phasellus faucibus sclerisque eleifend donec pretium vulputate. Pharetra magna ac placerat vestibulum. Quam lacus suspendisse faucibus interdum posuere lorem. Egestas tellus rutrum tellus pallentesque eu tincidunt. Neque vitae tempus quam pellentesque nec. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Interdum velit euismod in pellentesque massa placerat duis.
+                            </p>
+
+                            <p>
+                                Quis viverra nibh cras pulvinar mattis. Ornare arcu dui vivamus felis bibendum ut tristique. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Dignissim diam quis enim lobortis scelerisque. Tellus molestie nunc non blandit massa enim. the text box. Click again or double click to start editing the text.
+                            </p>
+                        </div>
+
+                        <div class="my-col-100">
+                            <div class="about-container">
+                                <img src="./img/about.jpg" alt="about">
+                            </div>
+
+                            <p class="font-violet">
+                                I help companies tincidunt tortor aliqua nulla facilis cras fermentum odio.
+                            </p>
+
+                            <div>
+                                <a href="">
+                                    <div>
+                                        in
+                                    </div>
+                                    Find me on Linkedin
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+
+            <section id="sixth-section" class="second-section-color">
+                <div class="container">
+                    <div class="my-row">
+                        <div class="my-col-100">
+                            <span>GET STARTED</span>
+                        </div>
+
+                        <div class="my-col-100">
+                            <h3>
+                                Simple, trasparent Pricing
+                            </h3>
+                        </div>
+
+                        <div class="my-col-100">
+                            <h2>
+                                It's Free!
+                            </h2>
+                        </div>
+
+                        <div class="my-col-100">
+                            <p>
+                                We're still in beta and we will be for awhile. As we add more functionally, we'll look into other plans with more controls.
+                            </p>
+                        </div>
+
+                        <div class="my-col-100">
+                            <div>
+                                <a href="">Get Started</a>
+                            </div>
+                        </div>
+
+                        <div class="my-col-100">
+                            Copyright 2021 Boolean <i class="fa-solid fa-circle"></i> Classe XX <i class="fa-solid fa-circle"></i> <a href="">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-footer">
+            <div class="container">
+                <div class="my-row">
+                    <div class="my-col-100">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maiores minima vitae vero nulla pariatur impedit!
+                    </div>
+
+                    <div class="my-col-100">
+                        <a href="">Lorem ipsum</a> scelerisque mauris pellentesque <a href="">Boolean Careers</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
